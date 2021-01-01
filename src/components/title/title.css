@@ -1,0 +1,16 @@
+.glow {
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 0px 6px black;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #D4AF37, 0 0 20px #D4AF37, 0 0 30px #D4AF37, 0 0 40px #D4AF37, 0 0 50px #D4AF37, 0 0 60px #D4AF37, 0 0 70px #D4AF37;
+    }
+    to {
+      text-shadow: 0 0 20px #D4AF37, 0 0 30px #CFB53B, 0 0 40px #CFB53B, 0 0 50px #CFB53B, 0 0 60px #CFB53B, 0 0 70px #CFB53B, 0 0 80px #CFB53B;
+    }
+  }
