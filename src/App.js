@@ -6,14 +6,9 @@ import Title from "./components/title";
 import styled from "styled-components";
 import Confetti from "react-confetti";
 
-import BetOnIt from "./sounds/BetOnIt.mp3";
-import BlindingLights from "./sounds/BlindingLights.mp3";
-import BotenAnna from "./sounds/BotenAnna.mp3";
-import IGottaFeeling from "./sounds/IGottaFeeling.mp3";
-import SimplytheBest from "./sounds/SimplytheBest.mp3";
-import Summer from "./sounds/Summer.mp3";
-import Underbart from "./sounds/Underbart.mp3";
-import yeahwow from "./sounds/yeahwow.mp3";
+import Demo from "./sounds/demo.mp3";
+import Ordinary from "./sounds/ordinary.mp3";
+import PPC from "./sounds/ppc.mp3";
 
 const Wrapper = styled.div`
     display: flex;
@@ -41,44 +36,24 @@ const Row = styled.div`
 `;
 const songs = [
   {
-    title: "Boten Anna",
-    words: ["För", "i", "mina", "ögon", "är", "hon"],
-    sound: BotenAnna,
+    title: "Demo",
+    words: ["This", "is", "a", "Demo"],
+    sound: Demo,
   },
   {
-    title: "I Gotta Feeling",
+    title: "Ordinary",
+    words: ["You're", "takin", "me", "out", "of", "the"],
+    sound: Ordinary,
+  },
+  {
+    title: "Pink ponn club",
+    words: ["It's", "where", "I", "belong", "down", "at", "the"],
+    sound: PPC,
+  },
+  {
+    title: "Pink ponn club",
     words: ["Go", "out", "and", "smash", "it"],
-    sound: IGottaFeeling,
-  },
-  {
-    title: "Blinding lights",
-    words: ["The", "city's", "cold", "and", "empty"],
-    sound: BlindingLights,
-  },
-  {
-    title: "Summer of 69",
-    words: ["Me", "and", "some", "guys", "from", "school"],
-    sound: Summer,
-  },
-  {
-    title: "Simply The Best",
-    words: ["Better", "than", "all", "the", "rest"],
-    sound: SimplytheBest,
-  },
-  {
-    title: "Yeah Yeah Wow Wow",
-    words: ["Du", "är", "här", "jag", "är", "frusen"],
-    sound: yeahwow,
-  },
-  {
-    title: "Bet on it",
-    words: ["I'm", "not", "gonna", "stop"],
-    sound: BetOnIt,
-  },
-  {
-    title: "Underbart",
-    words: ["Hör", "du", "kärlekens", "alla", "toner"],
-    sound: Underbart,
+    sound: PPC,
   },
 ];
 
