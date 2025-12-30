@@ -22,6 +22,7 @@ function TileContainer({ toggleCardClick, words }) {
             r2 = getRandomIndex();
         }
         setBoomers({ [r1]: "boom", [r2]: "boom" });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [words]);
     return (
         <Wrapper>

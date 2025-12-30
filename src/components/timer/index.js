@@ -8,10 +8,6 @@ const Wrapper = styled.div`
     justify-content: center;
 `;
 
-const ButtonsWrapper = styled.div`
-    display: flex;
-`;
-
 const TimeLeft = styled.h1(
     ({ warning }) => `
     color: ${warning ? "red" : "white"};
@@ -19,15 +15,6 @@ const TimeLeft = styled.h1(
 `
 );
 const Timer = ({ seconds, setSeconds, isActive, setIsActive }) => {
-    function toggle() {
-        setIsActive(!isActive);
-    }
-
-    function reset() {
-        setSeconds(30);
-        setIsActive(true);
-    }
-
     useEffect(() => {
         let interval = null;
         if (isActive && seconds !== 0) {
@@ -39,7 +26,7 @@ const Timer = ({ seconds, setSeconds, isActive, setIsActive }) => {
             clearInterval(interval);
         }
         return () => clearInterval(interval);
-    }, [isActive, seconds]);
+    }, [isActive, seconds, setIsActive, setSeconds]);
 
     return (
         <Wrapper>
