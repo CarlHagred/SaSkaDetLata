@@ -6,9 +6,13 @@ import Title from "./components/title";
 import styled from "styled-components";
 import Confetti from "react-confetti";
 
-import Demo from "./sounds/demo.mp3";
-import Ordinary from "./sounds/ordinary.mp3";
+import DEMO from "./sounds/demo.mp3";
+import ORDINARY from "./sounds/ordinary.mp3";
 import PPC from "./sounds/ppc.mp3";
+import LF from "./sounds/lush_life.mp3";
+import UNWRITTEN from "./sounds/unwritten.mp3";
+import EENIE_MEENIE from "./sounds/eenie_meenie.mp3";
+import IMH from "./sounds/imh.mp3";
 
 const Wrapper = styled.div`
     display: flex;
@@ -38,12 +42,12 @@ const songs = [
   {
     title: "Demo",
     words: ["This", "is", "a", "Demo"],
-    sound: Demo,
+    sound: DEMO,
   },
   {
     title: "Ordinary",
     words: ["You're", "takin", "me", "out", "of", "the"],
-    sound: Ordinary,
+    sound: ORDINARY,
   },
   {
     title: "Pink ponn club",
@@ -51,9 +55,24 @@ const songs = [
     sound: PPC,
   },
   {
-    title: "Pink ponn club",
-    words: ["Go", "out", "and", "smash", "it"],
-    sound: PPC,
+    title: "Lush Life",
+    words: ["Doing", "it", "the", "way", "I", "wanna"],
+    sound: LF,
+  },
+  {
+    title: "Unwritten",
+    words: ["Feel", "the", "rain", "on", "your", "skin"],
+    sound: UNWRITTEN,
+  },
+  {
+    title: "eenie meenie",
+    words: ["You", "can't", "make", "up", "your"],
+    sound: EENIE_MEENIE,
+  },
+  {
+    title: "In my head",
+    words: ["I", "can", "see", "it", "going", "down"],
+    sound: IMH,
   },
 ];
 
