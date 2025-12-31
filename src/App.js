@@ -13,6 +13,10 @@ import LF from "./sounds/lush_life.mp3";
 import UNWRITTEN from "./sounds/unwritten.mp3";
 import EENIE_MEENIE from "./sounds/eenie_meenie.mp3";
 import IMH from "./sounds/imh.mp3";
+import TTLO from "./sounds/ttlo.mp3";
+import IWY from "./sounds/IWY.mp3";
+import IGAF from "./sounds/IGAF.mp3";
+import LOVE_STORY from "./sounds/love_story.mp3";
 
 const Wrapper = styled.div`
     display: flex;
@@ -73,6 +77,26 @@ const songs = [
     title: "In my head",
     words: ["I", "can", "see", "it", "going", "down"],
     sound: IMH,
+  },
+  {
+    title: "Turn the lights off",
+    words: ["Come", "on", "baby", "turn", "the"],
+    sound: TTLO,
+  },
+  {
+    title: "Im with you",
+    words: ["It's", "a", "damn", "cold", "night"],
+    sound: IWY,
+  },
+  {
+    title: "I gotta feeling",
+    words: ["Tonight's", "the", "night", "hey"],
+    sound: IGAF,
+  },
+  {
+    title: "Love Story",
+    words: ["But", "you", "were", "everything", "to", "me"],
+    sound: LOVE_STORY,
   },
 ];
 
